@@ -1,4 +1,7 @@
 #include <stdio.h>
+#define QUARTER 25
+#define DIME 10
+#define NICKLE 5
 
 int main()
 {

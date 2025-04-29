@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <string.h>
 
 void center_text(int width, char *text)
 {
@@ -7,6 +8,13 @@ void center_text(int width, char *text)
 	   - this code won't run until the function is
 	   written
 	*/
+	int len = strlen(text);
+	int sp = ((width - len) / 2);
+
+	for (int i=0; i<sp; i++) {
+		printf(" ");
+	}
+	printf("%s\n", text);
 }
 
 int main()
